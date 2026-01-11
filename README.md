@@ -1,0 +1,111 @@
+# Brevia Fullstack Project ☕
+
+## Project Overview
+
+Brevia is a **frontend-based coffee & bakery web application** built using **React**. The project allows users to browse menu items, customize orders, manage a cart, place orders, and view reviews. It demonstrates component-based design, state management using Context API, and clean project structure suitable for academic submission and GitHub hosting.
+
+---
+
+## Tech Stack
+
+* **Frontend:** React (Vite)
+* **Language:** JavaScript (JSX)
+* **State Management:** React Context API
+* **Assets:** Images (cakes, coffee, desserts)
+* **Version Control:** Git & GitHub
+
+---
+
+## Folder Structure (Simplified)
+
+```
+frontend/
+ └── src/
+     ├── api/
+     │    └── index.js
+     ├── assets/
+     │    └── images (coffee, cakes, desserts)
+     ├── component/
+     │    └── MapViews.jsx
+     ├── context/
+     │    └── CartContext.jsx
+     ├── data/
+     │    └── bakeryItems.js
+     ├── pages/
+     │    ├── home.jsx
+     │    ├── menu.jsx
+     │    ├── customize.jsx
+     │    ├── checkout.jsx
+     │    ├── orders.jsx
+     │    ├── reviews.jsx
+     │    └── admin.jsx
+     ├── App.jsx
+     ├── main.jsx
+     └── index.js
+```
+
+---
+
+## Project Functionalities
+* Orders stored and fetched from database
+* Reviews stored and displayed from database
+* Admin view for managing products and orders
+
+
+---
+
+## Database Structure (MySQL / phpMyAdmin)
+
+The project uses a database named **`brevia`** with the following tables:
+
+| Table Name   | Purpose                                  |
+| ------------ | ---------------------------------------- |
+| bakery_items | Stores bakery and coffee product details |
+| products     | Manages available products               |
+| orders       | Stores customer orders                   |
+| product_sold | Tracks sold products                     |
+| reviews      | Stores customer reviews                  |
+
+---
+
+## Module & Work Distribution 
+
+| Module / File       | Description                  | Student Responsible |
+| ------------------- | ---------------------------- | ------------------- |
+| home.jsx            | Landing page and main UI     | Nimra Rauf          |
+| menu.jsx            | Menu display from database   | Nimra Rauf          |
+| bakeryItems.js      | Frontend data handling       | Nimra Rauf          |
+| assets (images)     | Product images and media     | Nimra Rauf          |
+| products table      | Product data management      | Nimra Rauf          |
+| orders.jsx          | Fetch and display orders     | Nimra Rauf          |
+| orders table        | Order storage                | Nimra Rauf          |
+| customize.jsx       | Product customization        | Malaika Raheem      |
+| checkout.jsx        | Checkout and order placement | Malaika Raheem      |
+| reviews.jsx         | Fetch and display reviews    | Malaika Raheem      |
+| CartContext.jsx     | Cart state management        | Malaika Raheem      |
+| reviews table       | Review storage               | Malaika Raheem      |
+| product_sold table  | Sold products tracking       | Malaika Raheem      |
+| api/index.js        | API communication            | Malaika Raheem      |
+| App.jsx             | Routing and app structure    | Both                |
+| main.jsx / index.js | Application entry point      | Both                |
+
+
+---
+
+## Contribution Summary
+
+* **Nimra Rauf:** UI pages, menu display, assets management, map component, core layout, orders component.
+* **Malaika Raheem:** Cart logic, customization, checkout, reviews, and state management.
+* **Both Students:** App setup, routing, debugging, testing, and GitHub collaboration.
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+2. Navigate to the `frontend` folder
+3. Install dependencies using `npm install`
+4. Run the project using `npm run dev`
+5. Open the provided localhost link in the browser
+
+---
